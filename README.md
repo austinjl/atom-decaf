@@ -1,2 +1,2 @@
-# atom-decaf
+# language-decaf
 Decaf language support in atom
