@@ -1,0 +1,89 @@
+'scopeName': 'source.decaf'
+'name': 'Decaf'
+'fileTypes': ['decaf']
+
+'patterns': [
+  # function declaration
+  {
+    'match': '\\b(def)\\s+(\\w+)\\s*\\(.*\\)'
+    'captures':
+      '1':
+        'name': 'keyword.control.decaf'
+      '2':
+        'name': 'entity.name.function.decaf'
+    'name': 'meta.function.decaf'
+  },
+  # function declaration with return type
+  {
+    'match': '\\b(def)\\s+(\\w+)\\s+(\\w+)\\s*\\(.*\\)'
+    'captures':
+      '1':
+        'name': 'keyword.control.decaf'
+      '2':
+        'name': 'entity.name.type.decaf'
+      '3':
+        'name': 'entity.name.function.decaf'
+    'name': 'meta.function.decaf'
+  },
+  # variable types
+  {
+    'match': 'int'
+    'name': 'entity.name.type.decaf'
+  },
+  {
+    'match': 'bool'
+    'name': 'entity.name.type.decaf'
+  },
+  {
+    'match': 'void'
+    'name': 'entity.name.type.decaf'
+  },
+  # other keywords
+  {
+    'match': 'if'
+    'name': 'keyword.control.decaf'
+  },
+  {
+    'match': 'else'
+    'name': 'keyword.control.decaf'
+  },
+  {
+    'match': 'return'
+    'name': 'keyword.control.decaf'
+  },
+  {
+    'match': 'while'
+    'name': 'keyword.control.decaf'
+  },
+  {
+    'match': 'continue'
+    'name': 'keyword.control.decaf'
+  },
+  {
+    'match': 'break'
+    'name': 'keyword.control.decaf'
+  },
+  {
+    'match': 'true'
+    'name': 'constant.language.decaf'
+  },
+  {
+    'match': 'false'
+    'name': 'keyword.language.decaf'
+  },
+  # function calls
+  {
+    'match': '\\s+(\\w+)\\s*\\(.*\\)'
+    'name': 'entity.name.function.decaf'
+  },
+  # numbers
+  {
+    'match': '\\b(([0-9]+\\.?[0-9]*)|(\\.[0-9]+))\\b'
+    'name': 'constant.numeric.decaf'
+  }
+  # comments
+  {
+    'match': '\\\\'
+    'name': 'comment.line.double-slash'
+  }
+]

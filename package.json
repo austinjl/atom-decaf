@@ -1,0 +1,17 @@
+{
+  "name": "language-decaf",
+  "version": "0.0.0",
+  "description": "Decaf language support in Atom",
+  "engines": {
+    "atom": "*"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://https://github.com/austinjl/language-decaf"
+  },
+  "bugs": {
+    "url": "https://github.com/austinjl/language-decaf/issues"
+  },
+  "license": "MIT"
+}
