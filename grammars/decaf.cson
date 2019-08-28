@@ -3,80 +3,55 @@
 'fileTypes': ['decaf']
 
 'patterns': [
-  # function declaration
+  # keywords
   {
-    'match': '\\b(def)\\s+(\\w+)\\s*\\(.*\\)'
-    'captures':
-      '1':
-        'name': 'keyword.control.decaf'
-      '2':
-        'name': 'entity.name.function.decaf'
-    'name': 'meta.function.decaf'
+   'match': '\\bdef\\b'
+   'name': 'keyword.control.decaf'
   },
-  # function declaration with return type
   {
-    'match': '\\b(def)\\s+(\\w+)\\s+(\\w+)\\s*\\(.*\\)'
-    'captures':
-      '1':
-        'name': 'keyword.control.decaf'
-      '2':
-        'name': 'entity.name.type.decaf'
-      '3':
-        'name': 'entity.name.function.decaf'
-    'name': 'meta.function.decaf'
-  },
-  # variable types
-  {
-    'match': 'int'
+    'match': '\\bint\\b'
     'name': 'entity.name.type.decaf'
   },
   {
-    'match': 'bool'
+    'match': '\\bbool\\b'
     'name': 'entity.name.type.decaf'
   },
   {
-    'match': 'void'
+    'match': '\\bvoid\\b'
     'name': 'entity.name.type.decaf'
   },
-  # other keywords
   {
-    'match': 'if'
+    'match': '\\bif\\b'
     'name': 'keyword.control.decaf'
   },
   {
-    'match': 'else'
+    'match': '\\belse\\b'
     'name': 'keyword.control.decaf'
   },
   {
-    'match': 'return'
+    'match': '\\breturn\\b'
     'name': 'keyword.control.decaf'
   },
   {
-    'match': 'while'
+    'match': '\\bwhile\\b'
     'name': 'keyword.control.decaf'
   },
   {
-    'match': 'continue'
+    'match': '\\bcontinue\\b'
     'name': 'keyword.control.decaf'
   },
   {
-    'match': 'break'
+    'match': '\\bbreak\\b'
     'name': 'keyword.control.decaf'
   },
   {
-    'match': 'true'
+    'match': '\\btrue\\b'
     'name': 'constant.language.decaf'
   },
   {
-    'match': 'false'
+    'match': '\\bfalse\\b'
     'name': 'keyword.language.decaf'
   },
-  # function calls
-  {
-    'match': '\\s+(\\w+)\\s*\\(.*\\)'
-    'name': 'entity.name.function.decaf'
-  },
-  # numbers
   {
     'match': '\\b(([0-9]+\\.?[0-9]*)|(\\.[0-9]+))\\b'
     'name': 'constant.numeric.decaf'
@@ -89,5 +64,11 @@
     'captures':
       '1':
         'name': "punctuation.definition.comment.decaf"
+  },
+  # strings
+  {
+    'begin': '\"'
+    'end': '\"'
+    'name': 'string.quoted.single.mylanguage'
   }
 ]
